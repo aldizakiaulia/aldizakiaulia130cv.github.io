@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 3 pak ivant</title>
+</head>
+<body>
+    <form name="kalkulator">
+<label for="nama">bilangan pertama</label>
+<input type="number" id="bil1" name="bill"><br>
+<label for="password">bilangan kedua</label>
+<input type="number" id="bil2" name="bill2">
+<button type="submit" onclick="hitung('*')">x</button>
+<button type="submit" onclick="hitung('+')">+</button>
+<button type="submit" onclick="hitung('/')">/</button>
+<button type="submit" onclick="hitung('-')">-</button>
+
+<p id="hasil"></p>
+    </form>
+
+    <script>
+        function hitung(operator){
+            let a = parseFloat(document.getElementById("bil1").value);
+            let b = parseFloat(document.getElementById("bil2").value);
+            let hasil = 0;
+
+            switch (operator) {
+    case "+":
+      hasil = a + b;
+      alert(a + " + " + b + " = " + hasil);
+      break;
+    case "-":
+      hasil = a - b;
+      alert(a + " - " + b + " = " + hasil);
+      break;
+    case "*":
+      hasil = a * b;
+      alert(a + " x " + b + " = " + hasil);
+      break;
+    default:
+      hasil = a / b;
+      alert(a + " / " + b + " = " + hasil);
+  }
+}
+
+    </script>
+</body>
+</html>

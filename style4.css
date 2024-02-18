@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/736x/a4/53/ae/a453ae44949b72efe226aaeec1c54708.jpg') center/cover;
+   
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://images.pexels.com/photos/2174974/pexels-photo-2174974.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2174974.jpg&fm=jpg') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 75px 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.about-content img {
+    width: 600px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #d9a115;
+    border-radius: 8px;
+}
+
+.project {
+    padding: 20px;
+    border: 1px solid #d9a115;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+a {
+ color: #d9a115;
+ text-decoration: none;
+}
+
+.contact {
+    text-align: justify;
+}
